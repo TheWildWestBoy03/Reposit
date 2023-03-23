@@ -1,6 +1,7 @@
 #include "liste.h"
 
-int main(){
+int main()
+{
 
     /*Node *head = NULL;
     int index = 1;
