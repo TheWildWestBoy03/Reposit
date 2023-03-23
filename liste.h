@@ -13,5 +13,5 @@ void addAtEnd(Node** head, Data v);
 void display(Node *head);
 void modifyTheValue(int index, Node **head, int val);
 int getTheSum(Node *head);
-void modifyTheList(Node **head, int n);
+void modifyTheList(Node *head, int n);
 void addAtPos(Node **head, Data number, int pos);
