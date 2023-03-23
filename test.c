@@ -23,9 +23,10 @@ int main()
         addAtEnd(&listOfDurations, durationProcess);
         getchar();
     }
-    display(listOfDurations);
-    modifyTheList(&listOfDurations, 5);
-    display(listOfDurations);
+  /* display(listOfDurations);
+  */
+    modifyTheList(listOfDurations, 5);
+   // display(listOfDurations);
     addAtPos(&listOfDurations, 10, 4);
     display(listOfDurations);
     modifyTheList(&listOfDurations, 6);
