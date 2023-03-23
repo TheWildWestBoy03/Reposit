@@ -54,13 +54,13 @@ int getTheSum(Node *head){
 void modifyTheList(Node *head, int n){
     int sum = getTheSum(head);
     Node *copy = head, *anotherCopy = head, *nodeToDisplay = anotherCopy;
-    printf("%d \n", sum);
+    //printf("%d \n", sum);
     display(anotherCopy);
     for(int i=0; i<n; i++){
         Data value = copy -> val;
-        printf("%d \n", value);
+       // printf("%d \n", value);
         modifyTheValue(i, &anotherCopy, sum);
-        display(copy);
+       // display(copy);
         sum = sum - value;
         copy = copy -> next;
     }
