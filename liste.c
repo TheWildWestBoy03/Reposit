@@ -51,9 +51,9 @@ int getTheSum(Node *head){
     }
     return sum;
 }
-void modifyTheList(Node **head, int n){
-    int sum = getTheSum(*head);
-    Node *copy = *head, *anotherCopy = *head;
+void modifyTheList(Node *head, int n){
+    int sum = getTheSum(head);
+    Node *copy = head, *anotherCopy = head, *nodeToDisplay = anotherCopy;
     printf("%d \n", sum);
     display(anotherCopy);
     for(int i=0; i<n; i++){
@@ -64,6 +64,7 @@ void modifyTheList(Node **head, int n){
         sum = sum - value;
         copy = copy -> next;
     }
+    display(nodeToDisplay);
 }
 void addAtPos(Node **head, Data number, int pos){
     Node *copy = *head;
