@@ -28,9 +28,7 @@ int main()
     modifyTheList(listOfDurations, 5);
    // display(listOfDurations);
     addAtPos(&listOfDurations, 10, 4);
-    display(listOfDurations);
-    modifyTheList(&listOfDurations, 6);
-    display(listOfDurations);
+    modifyTheList(listOfDurations, 6);
     return 0;
 }
 
