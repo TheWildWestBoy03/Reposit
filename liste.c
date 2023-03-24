@@ -73,8 +73,10 @@ void addAtPos(Node **head, Data number, int pos){
         addAtBeginning(&copy, number);
         return ;
     }
-    else return;
-
+    else if(pos == 0){
+        addAtBeginning(&copy, number);
+        return;
+    }
     while(copy -> next != NULL){
         if(currentPos == pos){
             Node *auxiliar = (Node*) malloc(sizeof(Node));
@@ -86,4 +88,5 @@ void addAtPos(Node **head, Data number, int pos){
         currentPos++;
         copy = copy -> next;
     }
+    return;
 }
